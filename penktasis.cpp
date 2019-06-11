@@ -74,7 +74,6 @@ in.clear();
   isveda << *zodis << "  pasikartoja: " << listas.count(*zodis) <<" kartus "<< "ir jis pasikartoja ";
       for(size_t i=0;i<line.size();i++)
 {
-    std::cout<<line[i]<<"*";
   isveda<<line[i]<<" ";
 }
 isveda<<"teksto eilutese.";
