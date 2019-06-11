@@ -45,25 +45,36 @@ if(listas.count(*zodis)>=2){
 std::string eilute;
 std::string word;
 std::vector<int> line;
+int kartai=0;
 int eile = 1;
 in.clear();
- while (std::getline(in, eilute))
+    while (std::getline(in, eilute))
     {
         std::stringstream abc(eilute);
         while (!abc.eof())
         {
           abc>>word;
-          if(word==*zodis)
+          if(kartai>eile)
           {
-            line.push_back(eile);
+
+          }
+          else if(word==*zodis)
+          {
+            kartai=eile;
+             kartai++;
+
+             line.push_back(eile);
           }
 
         }
         eile++;
+
     }
+
   isveda << *zodis << "  pasikartoja: " << listas.count(*zodis) <<" kartus "<< "ir jis pasikartoja ";
       for(size_t i=0;i<line.size();i++)
 {
+    std::cout<<line[i]<<"*";
   isveda<<line[i]<<" ";
 }
 isveda<<"teksto eilutese.";
