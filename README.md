@@ -17,3 +17,9 @@ moterys  pasikartoja: 2 kartus ir jis pasikartoja 6 8 teksto eilutese.
 partneriui  pasikartoja: 2 kartus ir jis pasikartoja 2 2 9 teksto eilutese.
 proc  pasikartoja: 4 kartus ir jis pasikartoja 1 4 11 11 teksto eilutese.
 ```
+## paleidimas
+
+`git clone https://github.com/arnisimor/penktoji-uzduotis.git`<br/>
+`cd penktoji-uzduotis`<br/>
+`g++ penktoji.cpp -o test`<br/>
+`./test`<br/>
